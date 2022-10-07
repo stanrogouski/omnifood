@@ -23,10 +23,19 @@ body{
 }
 
 .heading-primary, 
-.heading-secondary{
+.heading-secondary,
+.heading-tertiary
+    
+{
     font-weight: 700;
     color: #333;
     letter-spacing: -0.5px;
+}
+
+.heading-tertiary{
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
 }
 
 .heading-primary{
@@ -48,7 +57,7 @@ body{
 .container span{
     font-size: 1.6rem;
     font-weight: 500;
-    color: #cf711f;
+    /* color: #cf711f; */
     text-transform: uppercase;
     margin-bottom: 1.6rem;
     letter-spacing: .75px;
@@ -120,7 +129,7 @@ body{
     padding: 16px 32px;
     border-radius: 9px;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
 }
 
 .btn-full:link,
@@ -217,7 +226,8 @@ body{
 
 .grid {
     display: grid;
-    gap: 9.6rem;
+    column-gap: 6.4rem;
+    row-gap: 9.6;
     
 }
 
@@ -227,6 +237,7 @@ body{
 
 .grid-three-cols{
     grid-template-columns: repeat(3, 1fr);
+   
 }
 
 .grid-four-cols{
@@ -234,10 +245,233 @@ body{
 }
 
 .step-img{
-    width: 50%;
+    width: 35%;
 }
 
 .section-how{
     margin-top: 100px;
 }
 
+.step-number{
+font-size: 8.6rem;
+font-weight: 600;
+color: #ddd;
+margin-bottom: 1.2rem;
+}
+
+.step-description{
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.step-img-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.step-text.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-img-box::before{
+    content: " ";
+    display: block;
+    width: 60%;
+   padding-bottom: 60%;
+    background-color: #fdf2e9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border-radius: 50%;
+
+}
+
+.step-img-box::after{
+    content: " ";
+    display: block;
+    width:45%;
+    padding-bottom: 45%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border-radius: 50%;
+    background-color: #fae5d3;
+}
+
+.heading-featured-in{
+    font-size: 1.4rem;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2.4rem;
+    color: #999;
+
+}
+
+.section-featured{
+    padding: 4.8rem 0 3.2rem 0;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logos img{
+    height: 3.2rem;
+    filter: brightness(0);
+    opacity: 50%;
+    
+
+
+
+}
+
+.section-meals{
+    padding: 9.6rem 0;
+}
+
+
+.meal-img{
+    width: 100%;
+ 
+ 
+}
+
+.meal-title{
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+}
+
+.meal-attributes{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+
+.meal-icon{
+  
+    color: #e67e22;
+    height: 24px;
+    width: 24px;
+    
+}
+
+.meal-attribute{
+    display: flex;
+     font-size:1.8rem;
+   align-items: center;
+     gap: 1.6rem;
+   
+ 
+     
+ }
+ 
+ .tag{
+    
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+   
+    color: #333;
+    border-radius: 100px;
+ } 
+
+ .tag-vegetarian{
+background-color: #51cf66;
+ }
+
+ .tag-paleo{
+background-color: #ffd43b;
+ }
+
+ .tag-vegan{
+    background-color: #51cf66;
+}
+ 
+ .meal-tags{
+    margin-bottom: 1.2rem;
+ 
+
+ }
+
+ .meal{
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s;
+ }
+
+ .meal-content{
+    padding: 3.2rem 4.8rem;
+ }
+
+ .list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+ }
+
+ .list-icon{
+    height: 3rem;
+    width: 3rem;
+    color: #e67e22;
+ }
+
+ .list-item{
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.6rem;
+ }
+
+ .margin-bottom-md{
+    margin-bottom: 4.8rem;
+ }
+
+ .all-recipes{
+    text-align: center;
+    font-size: 1.8rem;
+ }
+
+ .link:link,
+ .link:visited{
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+ }
+
+ .link:hover,
+ .link:active{
+    color: #333;
+    border-bottom: 1px solid transparent;
+ }
+
+ .center-text{
+    text-align: center;
+ }
+
+ .meal:hover{
+    transform: translateY(-1.25rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.07);
+ }

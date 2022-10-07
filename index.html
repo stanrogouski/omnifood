@@ -9,6 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
    
@@ -54,10 +56,30 @@
 <div class = "hero-img-box"><img src = "img/hero.png" class = "hero-img" alt = "woman enjoying food" ></div>
 
 </section>
+
+
+<section class = "section-featured">
+
+    <div class = "container">
+
+        <h2 class = "heading-featured-in">
+            As featured in
+        </h2>
+        <div class = "logos">
+            <img src = "/img/logos/business-insider.png" alt = "logo image">
+            <img src = "/img/logos/forbes.png" alt = "logo image">
+            <img src = "/img/logos/techcrunch.png" alt = "logo image">
+            <img src = "/img/logos/the-new-york-times.png" alt = "logo image">
+            <img src = "/img/logos/usa-today.png" alt = "logo image">
+        </div>
+    </div>
+</section>
+
 <section class = "section-how">
     <div class = "container">
         <span = "subheading">How it works</span>
-        <h2 class = "heading-secondary">Your daily dose of health in 3 simple steps</h2>
+        <h2 class = "heading-secondary">Your daily 
+            dose of health in 3 simple steps</h2>
         
     </div>
     <div class = "container grid grid-two-cols">
@@ -97,7 +119,99 @@
         </div>
     </div>
 </section>
- 
+
+
+<section class = "section-meals">
+    <section class = "section-how">
+        <div class = "container center-text">
+            <span = "subheading">Meals</span>
+            <h2 class = "heading-secondary">Omnifood AI chooses from 5,000+ 
+                recipes</h2>
+            
+        </div>
+
+        <div class = "container grid grid-three-cols margin-bottom-md">
+
+            <div class = "meal">
+                <img class = "meal-img" src = "img/meals/meal-1.jpg" alt = "picture of food">
+                <div class = "meal-content">
+               <div class = "meal-tags"> <span class = "tag tag-vegetarian"> Vegetarian</span>
+                 <p class = "meal-title">Meal 1: Japanese Gyozas</p>
+              
+                <ul class = "meal-attributes">
+             
+               <li class = "meal-attribute"><ion-icon class = "meal-icon" name="flame-outline"></ion-icon> 650 calories </li>
+                <li class = "meal-attribute"> <ion-icon  class = "meal-icon" name="restaurant-outline"></ion-icon> NutriScore of 74</li>
+                    <li class = "meal-attribute"> <ion-icon  class = "meal-icon" name="star-half-outline"></ion-icon>4.9 rating (537)</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            <div class = "meal"><img class = "meal-img" src = "img/meals/meal-2.jpg" alt = "picture of food">
+                <div class = "meal-content">
+                <div class = "meal-tags"> <span class = "tag tag-vegan"> Vegan </span> <span class = "tag tag-paleo"> Paleo</span>
+                    <p class = "meal-title">Meal 2: Avocado Salad</p>
+                 
+                   <ul class = "meal-attributes">
+                
+                  <li class = "meal-attribute"><ion-icon class = "meal-icon" name="flame-outline"></ion-icon> 400 calories </li>
+                   <li class = "meal-attribute"> <ion-icon  class = "meal-icon" name="restaurant-outline"></ion-icon> NutriScore of 92</li>
+                       <li class = "meal-attribute"> <ion-icon  class = "meal-icon" name="star-half-outline"></ion-icon>4.8 rating (441)</li>
+                           </ul>
+                       </div>
+            
+                    </div>
+            </div>
+
+
+            
+            <div class="diets">
+                <h3 class="heading-tertiary">Works with any diet:</h3>
+                <ul class="list">
+                  <li class="list-item">
+                    <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                    <span>Vegetarian</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                    <span>Vegan</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                    <span>Pescatarian</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                    <span>Gluten-free</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                    <span>Lactose-free</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                    <span>Keto</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                    <span>Paleo</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                    <span>Low FODMAP</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                    <span>Kid-friendly</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+              <div class = "container all-recipes margin-bottom-md">
+                <a href="#" class = "link">SEE ALL RECIPES&rarr;</a>
+              </div>
+</section>
+
 </main>
 
 </body>
