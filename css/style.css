@@ -256,8 +256,10 @@ body{
 }
 
 .grid-five-cols{
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
+
+
 
 .step-img{
     width: 35%;
@@ -742,4 +744,68 @@ color: #6f6f6f;
 *:focus{
     outline: none;
 
+}
+
+.footer{
+    padding: 9.6rem 0;
+}
+
+.social-links{
+    display: flex;
+    gap: 2.4rem;
+    list-style:none
+}
+
+.footer-heading{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.footer-navigation{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.footer-link:link,
+footer-link:visited {
+text-decoration: none;
+font-size: 1.6rem;
+color: #767676;
+}
+
+.footer-link:hover,
+footer-link:active{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #333;
+    transition: all 0.3s;
+} 
+
+.footer-logo{
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+.social-icon{
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.copyright{
+    font-size: 1.0rem;
+    color: #767676;  
+    line-height: 1.6;
+}
+
+.contacts {
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.address{
+    margin-bottom: 2.4rem;
 }
