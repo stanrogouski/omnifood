@@ -228,7 +228,15 @@ body{
     display: grid;
     column-gap: 6.4rem;
     row-gap: 9.6;
+  
     
+}
+
+
+
+.grid:not(:last-child){
+    margin-bottom: 9.6rem;
+
 }
 
 .grid-two-cols{
@@ -443,7 +451,7 @@ background-color: #ffd43b;
  }
 
  .margin-bottom-md{
-    margin-bottom: 4.8rem;
+    margin-bottom: 4.8rem !important;
  }
 
  .all-recipes{
@@ -542,4 +550,143 @@ margin-bottom: 1.6rem;
 
  .gallery-item{
     overflow: hidden;
+ }
+
+ .section-pricing{
+    padding: 9.6rem 0
+ }
+
+.plan-header{
+    text-align: center;
+    margin-bottom: 48px;
+    margin-top: 48px;
+}
+
+ .plan-name{
+color: #cf711f;
+font-weight: 600;
+font-size: 2.02rem;
+text-transform: uppercase;
+letter-spacing: 0.75;
+margin-bottom: 1.6rem;
+ }
+ .plan-price{
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.6rem;
+ }
+ .plan-text{
+font-size: 1.6rem;
+line-height: 1.6;
+color: #6f6f6f;
+ }
+
+ .plan-price span{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-right: .8rem;
+ }
+
+ .plan-sign-up{
+    text-align: center;
+    margin-top: 4.8rem;
+    margin-bottom: 4.8rem;
+ }
+
+ .pricing-plan{
+    
+    width: 75%;
+    padding: 4.8rem;
+    border-radius: 11px;
+   
+ }
+
+ .pricing-plan-starter{
+    justify-self: end;
+    border: solid #fdf2e9 2px;
+ }
+
+ .pricing-plan-complete{
+    background-color: #fdf2e9;
+ }
+
+
+ .feature-title{
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1.6rem;
+ }
+
+ .feature-text{
+    font-size: 1.8rem;
+    line-height: 1.8;
+ }
+
+ .feature-icon{
+    color: #e67e22;
+    height: 3.2rem;
+    width: 3.2rem;
+    margin-bottom: 3.2rem;
+    background-color: #fdf2e9;
+    padding: 1.6rem;
+    border-radius: 50%;
+ }
+
+ .plan-details{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: center;
+ }
+
+
+ .cta {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #e67e22;
+    box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.15);
+    border-radius: 11px;
+    height: 50rem;
+    overflow: hidden;
+
+    background-image:linear-gradient(90deg, red,#e67e22);
+ }
+
+ .cta-text-box{
+    padding: 4.8rem;
+    color: #2e1907;
+   
+
+ }
+
+ .cta-text{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+ }
+
+ .cta .heading-secondary{
+    color: #2e1907;
+    margin-bottom: 3.2rem;
+ }
+ .cta-image-box{
+    background-image: linear-gradient(
+    to right bottom,
+    rgba(235, 151, 78, 0.3),
+    rgba(230, 125, 34, 0.3)
+    ), 
+    url("../img/eating.jpg");
+    background-size: cover;
+    background-position: center;
+    
+   
+ }
+
+ .cta-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
  }
